@@ -17,19 +17,21 @@
     <div class="col-6">
       <h1 class="text-light fs-1">BSU</h1>
       <div id="bsuBoard" class="fs-1 text-light">0</div> <!-- id bsuBoard is how we find the div-->
-      <button onclick="updateBSU(+2)" class="btn btn-warning fs-1" type="button">BSU +2</button>
-      <button onclick="updateBSU(+3)" class="btn btn-warning fs-1" type="button">BSU +3</button>
-      <button onclick="updateBSU(-1)" class="btn btn-warning fs-1" type="button">BSU -1</button>
+      <button onclick="bsuScored1()" class="btn btn-warning fs-1" type="button">BSU +1</button>
+      <button onclick="bsuScored2()" class="btn btn-warning fs-1" type="button">BSU +2</button>
+      <button onclick="bsuScored3()" class="btn btn-warning fs-1" type="button">BSU +3</button>
+      <button onclick="bsuLost1()" class="btn btn-warning fs-1" type="button">BSU -1</button>
     </div>
     <div class="col-6">
       <h2 class="text-light fs-1">BYU</h2>
       <div id="byuBoard" class="fs-1 text-light">0</div>
+      <button onclick="updateBYU(+1)" class="btn btn-primary fs-1" type="button">BYU +1</button>
       <button onclick="updateBYU(+2)" class="btn btn-primary fs-1" type="button">BYU +2</button>
       <button onclick="updateBYU(+3)" class="btn btn-primary fs-1" type="button">BYU +3</button>
       <button onclick="updateBYU(-1)" class="btn btn-primary fs-1" type="button">BYU -1</button>
     </div>
     <div class="col-12">
-      <button onclick="reset()" class="btn btn-danger fs-1" type="button">Reset</button>
+      <button onclick="reset()" class="btn btn-danger fs-1" type="button">Reset All</button>
     </div>
   </div>
 
