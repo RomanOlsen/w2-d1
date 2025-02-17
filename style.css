@@ -1,0 +1,10 @@
+body {
+  background-image: url(https://bloximages.chicago2.vip.townnews.com/idahopress.com/content/tncms/assets/v3/editorial/0/29/0292d932-ee55-11e2-a893-001a4bcf887a/51e5ab2f4ba62.preview-620.jpg?crop=620%2C349%2C0%2C58&resize=1200%2C675&order=crop%2Cresize);
+  background-size: cover;
+  min-height: 100dvh;
+  background-position: center;
+}
+
+.bsu-color {
+  color: orange;
+}
