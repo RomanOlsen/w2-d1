@@ -3,17 +3,28 @@ let byu = 0
 let updateNumber = 0 // The current number being clicked on
 
 function updateBSU(updateNumber) {
-  bsu = bsu + updateNumber
-  console.log(bsu)
-  document.getElementById("bsuBoard")
-  bsuBoard.innerText = bsu
+  if (bsu + updateNumber < 0) {
+    console.log("You cant do that!")
+  }
+  else {
+    bsu = bsu + updateNumber
+    console.log(bsu)
+    document.getElementById("bsuBoard")
+    bsuBoard.innerText = bsu
+  }
 }
 
 function updateBYU(updateNumber) {
-  byu = byu + updateNumber
-  console.log(byu)
-  document.getElementById("byuBoard")
-  byuBoard.innerText = byu
+
+  if (byu + updateNumber < 0) {
+    console.log("You cant do that!")
+  }
+  else {
+    byu = byu + updateNumber
+    console.log(byu)
+    document.getElementById("byuBoard")
+    byuBoard.innerText = byu
+  }
 }
 
 function reset() {
