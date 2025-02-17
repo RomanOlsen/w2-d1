@@ -1,37 +1,16 @@
 let bsu = 0
 let byu = 0
-let byuUpdate = 0
+let updateNumber = 0 // The current number being clicked on
 
-function bsuScored1() {
-  bsu = bsu + 1
+function updateBSU(updateNumber) {
+  bsu = bsu + updateNumber
   console.log(bsu)
   document.getElementById("bsuBoard")
   bsuBoard.innerText = bsu
 }
 
-function bsuScored2() {
-  bsu = bsu + 2
-  console.log(bsu)
-  document.getElementById("bsuBoard")
-  bsuBoard.innerText = bsu
-}
-
-function bsuScored3() {
-  bsu = bsu + 3
-  console.log(bsu)
-  document.getElementById("bsuBoard")
-  bsuBoard.innerText = bsu
-}
-
-function bsuLost1() {
-  bsu = bsu - 1
-  console.log(bsu)
-  document.getElementById("bsuBoard")
-  bsuBoard.innerText = bsu
-}
-
-function updateBYU(byuUpdate) {
-  byu = byu + byuUpdate
+function updateBYU(updateNumber) {
+  byu = byu + updateNumber
   console.log(byu)
   document.getElementById("byuBoard")
   byuBoard.innerText = byu
@@ -41,5 +20,6 @@ function reset() {
   bsu = 0
   byu = 0
   bsuBoard.innerText = bsu
+  byuBoard.innerText = byu
 }
-// TODO find a way to make updateBSU and BYU into 1 function
+
